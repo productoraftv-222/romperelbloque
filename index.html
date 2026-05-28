@@ -458,7 +458,7 @@ const CONFIG = {
 /* ============ TRAILER ============ */
 (function(){
   const frame = document.getElementById('trailer-frame');
-  if(CONFIG.youtubeId){
+  if(CONFIG.youtubeId && frame){
     frame.classList.remove('placeholder');
     frame.innerHTML = `<iframe
       src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(CONFIG.youtubeId)}?rel=0&modestbranding=1"
